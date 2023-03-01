@@ -1,0 +1,8 @@
+- Forgot password no funciona en dashboard de legado
+- El cambio de contraseña no funciona para relative user
+- Al agregar legacy user (solo por primera vez) correctamente no manda ningun mensaje de OK ni lo agrega a la Vista.
+- Archivo recien enviado por contacto de legado no aparece en el dashboard de relative
+- El correo de archivo al relative user llegó sin contraseña temporal pero solo si el archivo es enviado manualmente por el contacto de legado.
+
+
+- Bug al editar legacy manager

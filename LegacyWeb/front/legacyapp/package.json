@@ -1,0 +1,48 @@
+{
+  "name": "publicapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --config webpack.config.dev.js",
+    "build-dev": "webpack --config webpack.config.dev.js",
+    "build-prod": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --mode development --open --history-api-fallback",
+    "prod": "webpack-dev-server --config webpack.config.prod.js --mode development --open --history-api-fallback",
+    "dev-https": "webpack-dev-server --config webpack.config.dev.js --mode development --open --history-api-fallback --https --cert certs/private.pem --key certs/private.key"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv-webpack": "^2.0.0",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.4",
+    "vue-i18n": "^8.15.3",
+    "vue-moment": "^4.1.0",
+    "vue-router": "^3.0.7",
+    "vue-sweetalert2": "^2.1.1",
+    "vue-video-player": "^5.0.2",
+    "vuetify": "^2.2.9",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "deepmerge": "^4.2.2",
+    "fibers": "^4.0.2",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.4.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

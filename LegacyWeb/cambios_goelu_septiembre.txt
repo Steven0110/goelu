@@ -1,0 +1,8 @@
+- Que en File Manager aparezcan también relaciones con Grupos
+
+
+De estos puntos del PDF solo harían falta sus assets respectivos:
+- Faltan los videos/ Vista previa
+- Cambiar fotos.
+- Cambiar logo por el otro nuevo.
+- Cambiar foto.

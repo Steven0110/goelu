@@ -1,0 +1,33 @@
+@import url( https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900);
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+@font-face{
+	font-family: "Lato-Thin";
+	src: url("../fonts/lato/Lato-Thin.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Regular";
+	src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Light";
+	src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Bold";
+	src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Black";
+	src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Heavy";
+	src: url("../fonts/lato/Lato-Heavy.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Lato-Medium";
+	src: url("../fonts/lato/Lato-Medium.ttf") format("truetype");
+}

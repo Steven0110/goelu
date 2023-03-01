@@ -1,0 +1,18 @@
+{
+	"$schema" : "http://json-schema.org/draft-07/schema#",
+	"title" : "Legacy Register Schema",
+	"type" : "object",
+	"properties" : {
+		"email": {
+			"type": "string"
+		},
+		"password": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		}
+	},
+	"required": ["email", "password", "name"],
+	"additionalProperties": false
+}

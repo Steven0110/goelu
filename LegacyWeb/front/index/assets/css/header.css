@@ -1,0 +1,395 @@
+html{
+	scroll-behavior: smooth;
+}
+.menu{
+	width: 100%;
+	height: 9vh;
+	top: 0;
+	z-index: 300;
+	position: fixed;
+	left: 0;
+	opacity: 0.95;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s linear all;
+}
+.menu .mobile-menu-logo{
+	max-height: 100%;
+	width: 35px;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+.menu .logo{
+	width: 10%;
+	position: relative;
+	display: table;
+	text-align: center;
+	float: left;
+	height: 9vh;
+	transition: 0.2s linear all;
+}
+
+.menu .logo a{
+	height: 9vh;
+	display: table-cell;
+	vertical-align: middle;
+}
+.menu .logo img{
+ 	display: inline-block;
+	max-height: 90%;
+	max-width: 85%;
+}
+.menu .options{
+	float: left;
+	width: 90%;
+	height: 9vh;
+	border-right: 1px solid rgba(0, 0, 0, 0.07);
+	transition: 0.2s linear all;
+}
+.menu .options .option{
+	position: relative;
+	float: right;
+	padding-right: 25px;
+	padding-left: 25px;
+	height: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 8pt;
+	text-transform: uppercase;
+	transition: 0.3s linear all;
+}
+.menu .options .option-free{
+	background-color: #3aa9e0;	
+}
+.menu .options .language-selector{
+	float: right;
+	padding-right: 25px;
+	padding-left: 25px;
+	height: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+	transition: 0.3s linear all;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 8pt;
+	width: 150px;
+	color: white;
+	text-align: center;
+	transition: 0.2s linear all;
+	width: 102px;
+}
+.menu .options .language-selector span{
+	display: inline-block;
+	color: #bbb;
+	transition: 0.2s linear all;
+}
+.menu .options .language-selector span.language-option.active{
+	color: #3aa9e0;
+	transition: 0.2s linear all;
+}
+.menu .options .language-selector span.language-option:hover{
+	cursor: pointer;
+	color: #3aa9e0;
+	transition: 0.2s linear all;
+}
+.menu .options .option:nth-child(2){
+	border-right: 1px solid rgba(0, 0, 0, 0.07);
+}
+.menu .options .option:hover{
+	transition: 0.3s linear all;
+}
+.menu .options .option:hover a{
+	transition: 0.3s linear all;
+	color: #3aa9e0;
+}
+.menu .options .option a.active{
+	transition: 0.3s linear all;
+	color: #3aa9e0;
+}
+.menu .options .option a{
+	transition: 0.3s linear all;
+	color: #444;
+}
+.menu .options .option a:hover{
+	text-decoration: none;
+}
+.menu .options .option .dropdown{
+	display: block;
+	width: 175%;
+	position: absolute;
+	left: -2px;
+	transition: 0.2s linear all;
+	opacity: 0;
+	overflow: hidden;
+	height: 0;
+}
+.menu .options .option .dropdown a{
+	width: 100%;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s linear all;
+}
+.menu .options .option.submenu:hover .dropdown{
+	opacity: 1;
+	height: 144px;
+	transition: 0.2s linear all;
+}
+.menu .options .option.submenu:hover .dropdown a{
+	transition: 0.2s linear all;
+	height: 48px;
+	background-color: #9e9e9e;
+	color: white;
+}
+.menu .options .option.submenu:hover .dropdown a:hover{
+	background-color: #828282;
+}
+.menu .mobile{
+	background: #2a2f3b;
+	position: fixed;
+	height: 100vh;
+	right: 0;
+	width: 60%;
+	padding-top: 80px;
+	padding-top:9vh;
+}
+.menu .mobile.active{
+	transform: translate(0);
+	transition: 0.2s linear all;
+}
+.menu .mobile.inactive{
+	transform: translate(100%);
+	transition: 0.2s linear all;
+}
+.menu .mobile .logo{
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	text-align: center;
+}
+.menu .mobile .logo a{
+	display: block;
+	width: 100%;
+}
+.menu .mobile .logo img{
+	display: inline-block;
+	max-width: 60%;
+}
+.menu .mobile .options{
+	height: 9vh;
+}
+.menu .mobile .options .option:not(.submenu){
+	text-align: right;
+	height: 100%;
+	transition: 0.3s linear all;
+	font-family: "Lato-Bold";
+	font-size: 12px;
+	height: 50px;
+	padding: 0 30px 0 20px;
+}
+.menu .mobile .options .option:hover{
+	background-color: #454d61;
+	transition: 0.3s linear all;
+}
+.menu .mobile .options .option{
+	margin-top: 10px;
+}
+.menu .mobile .options .option a{
+	color: rgba(255, 255, 255, 0.7);
+}
+.menu .mobile .options .option a:hover{
+	text-decoration: none;
+}
+
+.menu .mobile .options .option.submenu{
+	position: relative;
+	transition: 0.3s linear all;
+	font-family: "Lato-Bold";
+	font-size: 12px;
+	text-align: right;
+	padding: 10px 50px 15px 20px;
+	height: auto;
+}
+.menu .mobile .options .option.submenu > .valign-parent{
+	position: relative;
+}
+.menu .mobile .options .option.submenu .dropdown-icon{
+	position: absolute;
+	height: 13px;
+	width: 13px;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%) rotate(0deg);
+	transition: 0.2s linear all;
+	filter: invert(1);
+}
+.menu .mobile .options .option.submenu:hover .dropdown-icon{
+	transform: translateY(-50%) rotate(180deg);
+	transition: 0.2s linear all;
+}
+.menu .mobile .options .option .mobile-dropdown{
+	position: relative;
+	padding-top: 10px;
+	height: 0;
+	overflow: hidden;
+	transition: 0.2s linear all;
+}
+.menu .mobile .options .option .mobile-dropdown a{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: auto;
+	opacity: 0;
+	transition: 0.2s linear all;
+}
+.menu .mobile .options .option.submenu:hover .mobile-dropdown{
+	height: 125px;
+	transition: 0.2s linear all;
+}
+.menu .mobile .options .option.submenu:hover .mobile-dropdown a{
+	opacity: 1;
+	transition: 0.2s linear all;
+}
+.menu .mobile .options .option.submenu:hover .mobile-dropdown a:hover{
+	transition: 0.2s linear all;
+}
+.menu .mobile .search{
+	width: 5%;
+	height: 9vh;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu .mobile .search img{
+	width: 15px;
+}
+.mobile-menu-toggle-container{
+	position: fixed;
+	z-index: 100;
+	right: 20px;
+	top: 0px;
+	width: 30px;
+	height: 9vh;
+}
+.menu .mobile .icon-flag{
+	width: 40px;
+	display: inline-block;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+
+.menu.scrolled{
+	background-color: #2e2e2e;
+}
+.menu.scrolled .dropdown{
+	background-color: #2e2e2e;
+}
+.menu.override-active{
+	background-color: #2e2e2e;
+	transition: 0.2s linear all;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.menu.scrolled .options .option a{
+	color: white;
+}
+.menu.scrolled .options .language-selector span{
+	color: #bbb;
+}
+.menu.scrolled .options .language-selector span.language-option.active{
+	color: white;
+}
+.menu.scrolled .options .language-selector span.language-option:hover{
+	color: white;
+}
+.menu.scrolled .options .option:not(.submenu):hover{
+	background-color: #eeeeee;
+}
+.menu.scrolled .options .option:not(.submenu):hover a{
+	color: black;
+}
+.menu.scrolled .logo{
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s linear all;
+}
+.menu.scrolled .options{
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s linear all;
+}
+.menu.scrolled .options .option{
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+	transition: 0.2s linear all;
+}
+.menu.scrolled .options .language-selector{
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+	transition: 0.2s linear all;
+}
+
+
+@media only screen and (min-width: 1440px){
+	.menu .options .option,.menu .options .language-selector{
+		font-size: 9pt;
+	}
+	.menu .options .language-selector{
+		width: 135px;
+	}
+}
+@media only screen and (min-width: 1920px){
+	.menu .options .option,.menu .options .language-selector{
+		font-size: 10pt;
+	}
+	.menu .options .language-selector{
+		width: 135px;
+	}
+}
+@media only screen and (min-width: 2560px){
+	.menu .options .option,.menu .options .language-selector{
+		font-size: 12pt;
+	}
+	.menu .options .language-selector{
+		width: 135px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.menu{
+		background-color: #2E2E2E;
+		padding-top: 5px;
+		padding-bottom: 5px;
+ 	}
+	.menu, .menu .options, .menu .options .option{
+		border: none;
+	}
+	.menu .mobile .options, .menu .mobile .options .option{
+		width: 100%;
+	}
+	.menu .options .language-selector{
+		width: 100%;
+		display: block;
+		text-align: right;
+		border: none;
+		margin-top: 15px;
+	}
+	.menu .options .language-selector .language-option{
+		transition: 0.1s linear all;
+	}
+	.menu .options .language-selector .language-option.active{
+		box-shadow: 0px 0px 5px 4px white;
+		transition: 0.1s linear all;
+	}
+}

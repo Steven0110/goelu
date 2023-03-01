@@ -1,0 +1,142 @@
+html, body{
+	box-sizing: border-box;
+	min-height: 100%;
+	max-width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow-x: hidden;
+}
+.coming-soon{
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/goelu_comingsoon_01.jpg');
+  background-size: cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-fluid{
+    margin-left: -15px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important; 
+}
+
+.valign-parent{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.valign-child{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	display: table-cell;
+}
+.relative{
+	position: relative;
+}
+
+h5.title{
+  font-size: 1.35rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+#preloader{
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+  color:white;
+  opacity: 1;
+  transition: 1s all ease-in;
+}
+#preloader.hidden {
+  opacity: 0;
+  transition: 1s all ease-in;
+}
+#preloader.removed {
+  display: none;
+  transition: 1s all ease-in;
+}
+#preloader.fadeout {
+  background-color:white !important;
+  display: block !important;
+  opacity: 1 !important;
+  transition: 1s all ease-in !important;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(122,153,217)),
+                                       color-stop(0.72, rgb(73,125,189)),
+                                       color-stop(0.86, rgb(28,58,148)));
+}
+::-moz-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-moz-scrollbar{
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-moz-scrollbar-thumb{
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(122,153,217)),
+                                       color-stop(0.72, rgb(73,125,189)),
+                                       color-stop(0.86, rgb(28,58,148)));
+}
+::-o-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-o-scrollbar{
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-o-scrollbar-thumb{
+    background-image: -webkit-gradient(linear,
+                                       left bottom,
+                                       left top,
+                                       color-stop(0.44, rgb(122,153,217)),
+                                       color-stop(0.72, rgb(73,125,189)),
+                                       color-stop(0.86, rgb(28,58,148)));
+}
+
+
+@media only screen and (max-width: 768px){
+  .container-fluid{
+    margin-left: -15px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important; 
+  }
+}

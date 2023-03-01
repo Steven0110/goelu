@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-07/schema#",
+	"title" : "Legacy Login Schema",
+	"type" : "object",
+	"properties" : {
+		"email": {
+			"type": "string"
+		},
+		"password": {
+			"type": "string"
+		},
+		"adminCheck": {
+			"type": "boolean"
+		},
+		"rememberUser": {
+			"type": "boolean"
+		}
+	},
+	"required": ["email", "password"],
+	"additionalProperties": false
+}

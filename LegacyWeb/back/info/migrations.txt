@@ -1,0 +1,10 @@
+Al cambiar alguna variable de entorno aspecto del sistema tomar en cuenta:
+- Variables de entorno de
+	Autorizadores
+	CheckToken*
+	addFile*
+-Variables de etapa
+-Verificar .env en servidor de archivos
+
+
+Regresar los permisos del server a drwxr-xr-x

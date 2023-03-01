@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Goelu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Google Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/slider.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/sections.css">
+	<link rel="stylesheet" href="assets/css/animations.css">
+
+	<!-- Bootstrap styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Slick styles -->
+	<link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/lib/slick/slick-theme.css"/>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<!-- Video.js -->
+	<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+	<link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+	<!--Sweetalert-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+	
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LT37ZXETZ1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-LT37ZXETZ1');
+	</script>
+	
+	<!-- Begin Mailchimp-->
+		<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}	
+		</style>
+		<script id="mcjs">
+			!function(c,h,i,m,p)
+			{m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+			m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}
+			(document,"script","https://chimpstatic.com/mcjs-connected/js/users/71270ce2b8b584862032d204f/2eb8734e9a5ca447d3d12f977.js");
+		</script>
+	<!-- End Mailchimp-->
+	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '278082556955161');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=278082556955161&ev=PageView&noscript=1"
+		/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+	<div id="preloader"></div>
+	<div class="container-fluid">
+
+		<!-- Sticky Menu  -->
+		<div class="menu">
+			<div class="d-flex h-100 mobile-menu-logo d-block d-lg-none">
+				<img src="assets/images/goelu_g_logo.svg" alt="Logo">
+			</div>
+			<!-- Desktop  -->
+		    <div class="relative desktop d-none d-lg-block">
+		        <div class="logo">
+		            <a href="/">
+		            	<img src="assets/images/goelU.svg" class="img img-responsive">
+		            </a>
+		        </div>
+		        <div class="options">
+		            <div class="language-selector">
+		                <div class="valign-parent">
+		                	<p class="valign-child">
+			                	<span class="language-option english-switcher active">EN</span>
+			                	<span>/</span>
+			                	<span class="language-option spanish-switcher">ES</span>
+		                	</p>
+		                </div>
+		            </div>
+					<!--
+					<div class="option">
+		                <div class="valign-parent">
+		                	<a href="javascript:void(0);" class="valign-child" id="plans" >PLANS</a>
+		                </div>
+		            </div>
+					-->
+		            <div class="option submenu">
+		                <div class="valign-parent">
+		                	<a href="javascript:void(0);" class="valign-child" data-i18n="login">LOG IN</a>
+		                </div>
+		                <div class="dropdown">
+		                	<a href="javascript:void(0);" id="adminLink" class="valign-child" data-i18n="administrator">Administrador</a>
+		                	<a href="javascript:void(0);" id="userLink" class="valign-child" data-i18n="user">Usuario</a>
+		                	<a href="javascript:void(0);" id="legacyLink" class="valign-child" data-i18n="legacy-contact">LEGACY MANAGER</a>
+		                </div>
+		            </div>
+					<!--
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="javascript:void(0);" id="registerLink" class="valign-child" data-i18n="suscribe">SUSCRIBE</a>
+		                </div>
+		            </div>
+					-->
+					<div class="option">
+		                <div class="valign-parent">
+		                	<a href="javascript:void(0);" class="valign-child" id="parthership" >PARTNERSHIP</a>
+		                </div>
+		            </div>
+					<!--
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="/how-it-works" class="valign-child" id="hiw-link" data-i18n="how-it-works">HOW IT WORKS</a>
+		                </div>
+		            </div>
+					-->
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="/" class="valign-child" id="home-link" data-i18n="home">HOME</a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Mobile  -->
+		    <div class="relative mobile d-block d-lg-none inactive">
+		        <div class="logo">
+		            <a href="/">
+		            	<img src="assets/images/logo.svg">
+		            </a>
+		        </div>
+		        <div class="options" >
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="/" class="valign-child" data-i18n="home">HOME</a>
+		                </div>
+		            </div>
+					<!--
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="/how-it-works" class="valign-child" data-i18n="how-it-works">How it works</a>
+		                </div>
+		            </div>
+					-->
+					<div class="option">
+		                <div class="valign-parent">							
+		                	<a href="javascript:void(0);"  id="parthership-m" class="valign-child" >PARTNERSHIP</a>
+		                </div>
+		            </div>
+					<!--
+					<div class="option">
+		                <div class="valign-parent">							
+		                	<a href="javascript:void(0);"  id="plans-m" class="valign-child" >PLANS</a>
+		                </div>
+		            </div>										
+		            <div class="option">
+		                <div class="valign-parent">
+		                	<a href="#" class="valign-child" data-i18n="suscribe" href="javascript:void(0);" id="registerLink2">SUSCRIBE</a>
+		                </div>
+		            </div>
+					-->
+		            <div class="option submenu">
+		                <div class="valign-parent">
+		                	<a href="javascript:void(0);" class="valign-child" data-i18n="login">LOG IN </a>
+		                	<img class="dropdown-icon" src="/assets/icons/dropdown.png" />
+		                </div>
+		                <div class="mobile-dropdown">
+		                	<a href="https://account.goelu.com" class="valign-child" data-i18n="administrator">Administrador</a>
+		                	<a href="https://user.goelu.com" class="valign-child" data-i18n="user">Usuario</a>
+		                	<a href="https://legacy.goelu.com" class="valign-child" data-i18n="legacy-contact">Contacto Legado</a>
+		                </div>
+		            </div>
+
+		            <div class="language-selector">
+		                <div class="valign-parent">
+			                	<img class="language-option english-switcher icon-flag active" src="https://cdn4.iconfinder.com/data/icons/rounded-square-national-flags/512/USA-512.png"/>
+			                	<img class="language-option spanish-switcher icon-flag" src="https://cdn.countryflags.com/thumbs/spain/flag-button-square-250.png"/>
+		                	</p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			
+
+		    <div class="mobile-menu-toggle-container d-block d-lg-none">
+			    <div class="mobile-menu-toggle">
+	  				<span></span>
+	  				<span></span>
+	  				<span></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- First Section  -->
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row main-section">
+						<div class="col-lg-6">
+							<div class="main-section-container">
+								<div class="main-section-title">
+									<p data-i18n="main-section-title"></p>
+								</div>
+								<div class="main-section-text">
+									<p data-i18n="main-section-text"></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="main-section-container">
+								<img src="/assets/images/goelu_promote_index-01.svg">
+							</div>
+						</div>
+			
+						<a class="down" href="#video"></a>
+					</div>
+				</div>
+				<!--
+				<div class="carousel-item">
+					<div class="row for-life">
+						<div class="col-0 col-lg-7">
+						</div>
+						<div class="col-12 col-lg-5 for-life-col">
+							<div class="for-life-container">
+								<div class="for-life-contents">
+									<p class="title">goelu <span>for life!</span></p>
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<p class="content-1">get up to 100 GB</p>
+											<p class="content-2">Save all your videos, audios and files</p>
+											<p class="content-3">up to</p>
+											<p class="content-4">40 years</p>
+											<p class="content-5">of use!</p>
+											<div class="text-center btn-center">
+												<button type="button" class="btn btn-sm" id="plansLink">Get it now</button>
+											</div>											
+										</div>
+										<div class="col-0 col-lg-6 mt-sm-2 hide-content">
+											<div class="content-right">
+												<div class="row">
+													<div class="col-2 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Video and audio recording within the platform</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Send it Now</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Delivery Scheduling</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Legacy management</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Email support</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_palomita.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														Up to 10 Legacy Managers
+													</div>
+												</div>
+												<div class="row mt-4">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_g.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Safeguard your content up to 40 years!</p>
+													</div>
+												</div>
+												<div class="row mt-3">
+													<div class="col-2 pr-0 pr-0 d-flex justify-content-center align-items-center">
+														<img src="/assets/icons/icono_tabla_g.svg" >
+													</div>
+													<div class="col-10 pl-0">
+														<p>Preferential discounts (Up to 60%)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>									
+					</div>
+				</div>
+				-->
+				<div class="carousel-item">
+					<div class="row partnership-slider">
+						<div class="col-12 col-lg-5 partnership-slider-container padding-par">
+							<div class="title-partnership">
+								<div class="title-partnership-goelu">
+									goelu
+								</div>
+								<div class="title-partnership-partner">
+									Parthership
+								</div>								
+							</div>
+							<div class="content-partnership">
+								<div class="content-title-parthership" data-i18n="parthership-slider-title">
+									Let’s innovate the way you will be remembered.
+								</div>
+								<div class="content-text-parthership" data-i18n="parthership-slider-content">
+									We can upgrade your line of work, giving more value to human connection and legacies. Our Main goal is to bring people closer to their family not allowing time to be an impediment
+								</div>
+								<div class="text-center mt-4">
+									<button id="parthership-slider" type="button" class="btn btn-sm btn-partnership" id="plansLink" data-i18n="parthership-slider-btn">PARTNERSHIP</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-0 col-lg-7 hide-content">
+							<div class="more-information-container d-flex justify-content-end align-items-end">
+								<div class="more-information">
+									<div class="mr-4" style="display: inline; ">
+										<a href="https://account.goelu.com/partnership">
+											<img class="image-partnership" src="/assets/icons/icono_play_partnership-03.svg" alt="">
+										</a>										
+									</div>
+									<div style="display: inline;">
+										<span class="more-infor">More information</span>
+									</div>																		
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		
+
+		<!-- Video Section  -->
+		<div class="row video" id="video">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6 left-section order-lg-1 order-2">
+						<div class="video-container">
+							<div class="video-player hold-animation" data-animation="bounceIn" data-animation-speed="fast">
+								<video id="mainVideo" class="video-js vjs-theme-forest" height="300" controls data-setup='{"poster": "/assets/images/portada_videos_04_SP.jpg"}'>
+									<source src="assets/Main_Video.mp4" type="video/mp4"/>
+								</video>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 right-section order-lg-2 order-1">
+						<div class="video-container">						
+							<p class="marked-text cursive-text hold-animation" data-animation="slideInRight" data-animation-speed="fast" data-i18n="video-p-2">								
+							</p>
+							<p class="marked-text hold-animation" data-animation="slideInLeft" data-animation-speed="fast">								
+								<span data-i18n="video-p-1"></span>
+							</p>							
+							<p class="marked-text  hold-animation" data-animation="slideInRight" data-animation-speed="fast">								
+								<span><span data-i18n="video-p-4"></span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Features Section  -->
+		<div class="row features">
+			<div class="col-lg-12">
+				<h5 class="title" data-i18n="features-title">The value of experience</h5>
+				<!--<p class="text"><span data-i18n="in">In </span><span> goelU® </span><span data-i18n="features-1"> we are aware of the value of your life experiences.</span></p>-->
+				<p class="text" data-i18n="features-2">This is the reason why we make our goal to help you create unique content to pass it on to your family and loved ones.</p>
+
+				<div class="row specs">
+					<div class="col-lg-5 specs-left">
+						<div class="spec hold-animation" data-animation="bounceInLeft" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-1-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-1-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_family.svg" alt="Family icon">
+							</div>
+						</div>
+						<div class="spec hold-animation" data-animation="bounceInLeft" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-2-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-2-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_calendar_dot.svg" alt="">
+							</div>
+						</div>
+						<div class="spec hold-animation" data-animation="bounceInLeft" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-3-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-3-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_privacy.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 central-phone hold-animation" data-animation="bounceIn">
+						<img src="assets/images/iphone.png" alt="Phone">
+					</div>
+					<div class="col-lg-5 specs-right">
+						<div class="spec hold-animation" data-animation="bounceInRight" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-4-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-4-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_lab.svg" alt="">
+							</div>
+						</div>
+						<div class="spec hold-animation" data-animation="bounceInRight" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-5-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-5-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_generations.svg" alt="">
+							</div>
+						</div>
+						<div class="spec hold-animation" data-animation="bounceInRight" data-animation-speed="fast">
+							<div class="spec-title" data-i18n="spec-6-title">Let your family get to know you.</div>
+							<div class="spec-text" data-i18n="spec-6-text">Stretch your Website to the Full Width or make it boxed to surprise your visitors</div>
+							<div class="spec-icon">
+								<img src="assets/icons/ic_legacy_dot.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Introduction Section  -->
+		<div id="introduction" class="row introduction hold-animation" data-animation-speed="fast" data-animation="fadeInLeft">
+			<div class="col-lg-12">
+				<!--<h2 class="title" data-i18n="section-1-title">Transcend the limits of time</h2>
+				<h3 class="title" data-i18n="section-1-title">Transcend the limits of time</h3>-->				
+					<div class="title" data-i18n="section-1-p-1">
+						INNOVATE THE WAY 
+					</div>													
+					<div class="text" data-i18n="section-1-p-2">
+						YOU WILL BE REMEMBERED
+					</div>									
+			</div>
+		</div>
+
+		<!-- Video tutorials Section  -->
+		<div class="row tutorials">
+			<div class="col-md-12">
+				<h5 class="title" data-i18n="tutorials-1-title">Features</h5>
+				<p class="text" data-i18n="features-1-text">Schedule for every important moment of your family timeline. Make a video for your family’s birthdays, record an audio for your children’s graduations or just upload a letter. Make sure they don’t miss you on any special occasion.</p>
+
+				<div class="row">
+
+					<!-- Video Card  -->
+					<div class="col-lg-4">
+						<div class="videotutorial-outter-container left">
+							<div class="videotutorial-container">								
+
+								<div class="video-inner-container">
+									<div class="video-subtitle" data-i18n="video-1-title">Calendar</div>
+
+									<div class="video-image-poster poster-1" data-video-id="1"></div>
+
+									<!-- <video class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/bg-video-goelu.jpg"}'>
+										<source src="assets/small.mp4" type="video/mp4"/>
+									</video>-->
+								</div>
+
+								<div class="videotutorial-text" data-i18n="video-1-text"></div>
+
+								<a class="video-button" href="javascript:void(0);">
+									<div class="video-button-icon">
+										<img src="/assets/icons/ic_play-01.svg">
+									</div>
+									<div class="video-button-text" data-video-id="1" data-i18n="watch-video">Watch video</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="videotutorial-outter-container middle">
+							<div class="videotutorial-container">								
+								<div class="video-inner-container">
+									<div class="video-subtitle"data-i18n="video-2-title">Special Occasions</div>
+
+
+									<div class="video-image-poster poster-2" data-video-id="2"></div>
+
+									<!-- <video class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/bg-video-goelu.jpg"}'>
+										<source src="assets/small.mp4" type="video/mp4"/>
+									</video>-->
+								</div>
+								<div class="videotutorial-text" data-i18n="video-2-text"></div>
+								<a class="video-button" href="javascript:void(0);">
+									<div class="video-button-icon">
+										<img src="/assets/icons/ic_play-01.svg">
+									</div>
+									<div class="video-button-text" data-video-id="2" data-i18n="watch-video">Watch video</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="videotutorial-outter-container right">
+							<div class="videotutorial-container">								
+								<div class="video-inner-container">
+									<div class="video-subtitle" data-i18n="video-3-title">Files</div>
+
+
+									<div class="video-image-poster poster-3" data-video-id="3"></div>
+
+									<!-- <video class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/bg-video-goelu.jpg"}'>
+										<source src="assets/small.mp4" type="video/mp4"/>
+									</video>-->
+								</div>
+								<div class="videotutorial-text" data-i18n="video-3-text"></div>
+								<a class="video-button" href="javascript:void(0);">
+									<div class="video-button-icon">
+										<img src="/assets/icons/ic_play-01.svg">
+									</div>
+									<div class="video-button-text" data-video-id="3" data-i18n="watch-video">Watch video</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Begin Mailchimp Signup Form -->
+	<!--
+	<div class="row suscribe">
+		<div class="col-md-12">
+			<h3 class="title hold-animation" data-animation="fadeIn" data-animation-speed="fast"><span data-i18n="suscribe-1"></span><span data-i18n="suscribe-2" style="color: #3aa9e0;"></span></h3>
+			<div class="text-suscribe">
+				<p data-i18n="suscribe-text"></p>
+			</div>
+			<div id="mc_embed_signup">				
+				<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" onsubmit="return false" novalidate>
+					<div id="mc_embed_signup_scroll">	
+						<input type="email" value="" name="EMAIL" data-i18n="[placeholder]email" class="email" id="mce-EMAIL" placeholder="email address" required>						
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" name="b_71270ce2b8b584862032d204f_c6d7b0c1ba" tabindex="-1" value="">
+						</div>
+						<div class="clear">							
+							<button type="submit"  name="subscribe" id="mc-embedded-subscribe"  class="btn button">
+								<span id="suscribe-text-2" data-i18n="suscribe"></span>
+								<span id="suscribe-load-2" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+	-->
+	<!--End mc_embed_signup-->
+
+		<!-- Testimonials Section  -->
+		<div class="row testimonials">
+			<div class="col-md-12">
+				<h3 class="title hold-animation" data-animation="fadeIn" data-animation-speed="fast" data-i18n="testimonials">Testimonials</h3>
+
+				<!-- Testimonials Slider  -->
+				<div class="row hold-animation" data-animation="zoomInUp" data-animation-speed="fast">
+					<div class="col-md-12">
+						
+						<div id="testimonialsSlider" class="t-slider">
+
+							<div class="slide testimonial">
+								<div class="center-content">
+									<div class="author-photo-container">
+										<img src="assets/images/liam.jpeg" alt="" class="author-photo">
+									</div>
+									<div class="testimonial-text" data-i18n="testimonial-1-text">My work is hard. Not knowing if I am coming back from my missions is always a tough idea. With goelU at least I know my children will not miss my thoughts on every important event in their lives.</div>
+									<div class="author-name">- Captain Liam Williams</div>
+									<!-- <div class="author-location">NY, USA</div>-->
+								</div>
+							</div>
+
+
+							<div class="slide testimonial">
+								<div class="center-content">
+									<div class="author-photo-container">
+										<img src="assets/images/goeluTestimonio.jpeg" alt="" class="author-photo">
+									</div>
+									<div class="testimonial-text" data-i18n="testimonial-2-text">As an influencer I am used to be in front of the camera for thousands of people. goelU made me save my best ones for my kids! Even if for any reason I am not here, ill be with them.</div>
+									<div class="author-name">- Mary Stanton</div>
+									<!-- <div class="author-location">NY, USA</div>-->
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	
+		<!-- Footer-->
+		<div class="row footer">
+		    <div class="col-md-4 footer-column general">
+		        <!-- <div class="logo">
+		            <a href="/" class="nuxt-link-exact-active nuxt-link-active"><img src="/assets/img/logo.png"></a>
+		        </div>-->
+		        <p><span data-18n="copyright">Copyright</span> &copy; 2021.</p>
+		        <p>
+		        	<span><a href="javascript:void(0)" onclick="goToTerms()" data-i18n="terms-of-use">Terms of use</a></span>
+		        	<span> / </span>
+		        	<span> <a href="javascript:void(0)" onclick="goToPolicy()" data-i18n="privacy-policy">Privacy Policy</a></span>
+		        </p>
+		    </div>
+			<div class="col-md-4 info footer-column">
+				<div class="row">
+		    		<div class="col-lg-12">    			
+				        <div class="social-links">
+				            <div class="social-icon">
+				                <a href="https://www.instagram.com/goelu_official/" target="_blank">
+				                    <div class="icon"><img src="assets/icons/ic_instagram.svg" alt="Twitter"></div>
+				                </a>
+				            </div>
+				            <div class="social-icon">
+				                <a href="https://twitter.com/GoelU" target="_blank">
+				                    <div class="icon"><img src="assets/icons/ic_twitter.svg" alt="Instagram"></div>
+				                </a>
+				            </div>
+				            <div class="social-icon">
+				                <a href="https://www.facebook.com/Goelu-106499030889439" target="_blank">
+				                    <div class="icon"><img src="assets/icons/ic_facebook.svg" alt="Facebook"></div>
+				                </a>
+				            </div>
+				        </div>
+		    		</div>
+		    	</div>
+		        <div class="row contact-info">
+		            <div class="col-md-12 text-center">
+		                <!-- <div class="contact-line">
+		                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon svg-inline--fa fa-phone-alt fa-w-16">
+		                        <path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" class=""></path>
+		                    </svg>
+		                    <div class="text">+52 55 1234 1234	</div>
+		                </div>-->
+		                <div class="contact-line">
+		                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon svg-inline--fa fa-envelope fa-w-16">
+		                        <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+		                    </svg>
+		                    <div class="text">contact@goelu.com</div>
+		                </div>
+		            </div>
+		        </div>
+			</div>
+		    <div class="col-md-4  footer-column">		    	
+		    </div>
+		</div>
+
+		<!-- Popup video 1 -->
+		<div class="video-popup" id="v-popup-1">
+			<div class="outter">
+				<div class="inner">
+					<img src="/assets/icons/close.png" alt="" class="close-video-popup">
+					<video id="video-2" class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/portada_videos_02_SP.jpg"}'>
+						<source src="assets/Calendar_goelu.mp4" type="video/mp4"/>
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popup video 2 -->
+		<div class="video-popup" id="v-popup-2">
+			<div class="outter">
+				<div class="inner">
+					<img src="/assets/icons/close.png" alt="" class="close-video-popup">
+					<video id="video-3" class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/portada_videos_03_SP.jpg"}'>
+						<source src="/assets/Special-occasion_goelu.mp4" type="video/mp4"/>
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popup video 3 -->
+		<div class="video-popup" id="v-popup-3">
+			<div class="outter">
+				<div class="inner">
+					<img src="/assets/icons/close.png" alt="" class="close-video-popup">
+					<video id="video-4" class="videotutorial-per-se video-js vjs-theme-forest" controls data-setup='{"poster": "/assets/images/portada_videos_05_SP.jpg"}'>
+						<source src="assets/Files_goelu.mp4" type="video/mp4"/>
+					</video>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<!-- End of Container 
+	<div class="coming-soon"></div>-->	
+	<!--
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">			
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="text-center">
+					<img class="image-newsletter" src="/assets/images/ilustracion_newsletter_01.png">
+					<p class="title-new-letter"><span style="color: #3aa9e0;">NEWS</span><span>LETTER</span></p>
+					<p class="text-1-new-letter" data-i18n="newsletter-1">Don't miss out on our promos!</p>
+					<p class="text-2-new-letter" data-i18n="newsletter-2">Susbscribe and be the first to know about our discounts!</p>
+				</div>
+				<div class="row">
+					<div class="col-md-12">						
+						<div id="mc_embed_signup">
+							<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" onsubmit="return false" novalidate>
+								<div id="mc_embed_signup_scroll">	
+									<input type="email" value="" name="EMAIL" data-i18n="[placeholder]email" class="email mce-EMAIL" id="mce-EMAIL" placeholder="email address" required>									
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_71270ce2b8b584862032d204f_c6d7b0c1ba" tabindex="-1" value="">
+									</div>
+									<div class="clear">
+										<button type="submit"  name="subscribe" id="mc-embedded-subscribe"  class="btn button mc-embedded-subscribe">
+											<span id="suscribe-text-1" data-i18n="suscribe"></span>
+											<span id="suscribe-load-1" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+										</button>										
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>			  	
+			</div>			
+		  </div>
+		</div>
+	  </div>
+	-->
+
+	<!-- Bootstrap libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Slick 	 -->
+	<script type="text/javascript" src="assets/lib/slick/slick.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/animations.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!-- International -->
+	<script src="assets/js/i18n/jquery.i18n.js"></script>
+	<script src="assets/js/i18n/jquery.i18n.messagestore.js"></script>
+	<script src="assets/js/i18n/jquery.i18n.emitter.js"></script>
+	<script src="assets/js/i18n/jquery.i18n.fallbacks.js"></script>
+	<script src="assets/js/i18n/jquery.i18n.language.js"></script>
+	<script src="assets/js/i18n/CLDRPluralRuleParser.js"></script>
+	
+	<!-- Video.js -->
+	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+	
+	
+</body>
+
+
+<!-- Start of goelu Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=d7b8cdae-d14f-4756-88d0-fa8bbca194d5"> </script>
+<!-- End of goelu Zendesk Widget script -->
+
+
+</html>
