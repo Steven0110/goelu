@@ -58,6 +58,18 @@
 										dense,
 										background-color="transparent",
 										required)
+									v-alert(type="info", outlined)
+										div
+											strong DEMO SITE: 
+											| This is a demo version with no backend connection. 
+										div
+											| To test login functionality use:
+										div
+											strong Email: 
+											| test@example.com
+										div
+											strong Password: 
+											| password
 									v-btn(
 										color="#2963b4",
 										:loading="loading",
@@ -157,50 +169,252 @@
 					this.error = ""
 					this.message = ""
 
-					let body = {
-						"email": this.login.username,
-						"password": this.login.password,
-						"rememberUser": this.login.remember,
-					}
-
-					if( this.login.code )
-						body.code = this.login.code
-					
-					let url = this.baseApi + this.env + "relative-user/login"
-					this.axios.post(url, body)
-					.then( response => {
+					setTimeout(() => {
 						this.loading = false
-						console.log(response.data)
-						if( response.data.code == -1){
-							this.message = this.$t("new-location") + this.login.username+' '+ this.$t("new-location-2")
-							this.code = true
-						}else if( response.data.code == 1){
-							response.data.response.user.plan = {storageLimit: 20000000}
-							this.$store.commit("setUser", response.data.response.user)
-							localStorage.setItem("token", response.data.response.user.token)
-							localStorage.setItem("user", JSON.stringify(response.data.response.user))
+						
+						// Mock different scenarios based on email/password
+						if (this.login.username === "test@example.com" && this.login.password === "password") {
+							// Successful login
+							const mockUser = {
+								email: this.login.username,
+								name: "Test User",
+								token: "mock-token-" + Math.random().toString(36).substring(2),
+								plan: {storageLimit: 20000000}
+							}
+							
+							this.$store.commit("setUser", mockUser)
+							localStorage.setItem("token", mockUser.token)
+							localStorage.setItem("user", JSON.stringify(mockUser))
+							
+							// Add mock files data
+							const mockFiles = [
+								// Video files
+								{
+									_id: "v1",
+									imageUsr: "https://randomuser.me/api/portraits/men/1.jpg",
+									nameUser: "John Doe",
+									title: "Introduction Video",
+									description: "Company introduction for new employees",
+									size: 15000000,
+									createdAt: new Date().getTime() - 86400000 * 2,
+									url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+									type: "video"
+								},
+								{
+									_id: "v2",
+									imageUsr: "https://randomuser.me/api/portraits/women/2.jpg",
+									nameUser: "Jane Smith",
+									title: "Product Demo",
+									description: "Showcase of new features",
+									size: 25000000,
+									createdAt: new Date().getTime() - 86400000 * 5,
+									url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+									type: "video"
+								},
+								
+								// Audio files
+								{
+									_id: "a1",
+									imageUsr: "https://randomuser.me/api/portraits/men/3.jpg",
+									nameUser: "Robert Johnson",
+									title: "Meeting Recording",
+									description: "Team weekly planning session",
+									size: 5000000,
+									createdAt: new Date().getTime() - 86400000 * 1,
+									url: "https://sample-videos.com/audio/mp3/wave.mp3",
+									type: "audio"
+								},
+								{
+									_id: "a2",
+									imageUsr: "https://randomuser.me/api/portraits/women/4.jpg",
+									nameUser: "Emily Davis",
+									title: "Conference Call",
+									description: "Client discussion about project timeline",
+									size: 7500000,
+									createdAt: new Date().getTime() - 86400000 * 3,
+									url: "https://sample-videos.com/audio/mp3/wave.mp3",
+									type: "audio"
+								},
+								
+								// Document files
+								{
+									_id: "d1",
+									imageUsr: "https://randomuser.me/api/portraits/men/5.jpg",
+									nameUser: "Michael Wilson",
+									title: "Quarterly Report",
+									description: "Financial analysis Q3 2023",
+									size: 3000000,
+									createdAt: new Date().getTime() - 86400000 * 7,
+									url: "https://sample-files.com/download/pdf/sample.pdf",
+									type: "other",
+									isPdf: true
+								},
+								{
+									_id: "d2",
+									imageUsr: "https://randomuser.me/api/portraits/women/6.jpg",
+									nameUser: "Sarah Brown",
+									title: "Project Proposal",
+									description: "New marketing initiative details",
+									size: 2500000,
+									createdAt: new Date().getTime() - 86400000 * 10,
+									url: "https://sample-files.com/download/doc/sample.doc",
+									type: "other",
+									isWord: true
+								},
+								{
+									_id: "d3",
+									imageUsr: "https://randomuser.me/api/portraits/men/7.jpg",
+									nameUser: "David Lee",
+									title: "Product Image",
+									description: "High resolution product photo",
+									size: 8500000,
+									createdAt: new Date().getTime() - 86400000 * 15,
+									url: "https://sample-files.com/download/image/sample.jpg",
+									type: "other",
+									isImage: true
+								}
+							]
+							
+							// Commit the mock files to the store
+							this.$store.commit("setFiles", mockFiles)
 							
 							this.$swal({
 								title: this.$t("access-confirmed"),
 								text: this.$t("login-redirection"),
 								type: "success",
 								timer: 4000,
-  								showConfirmButton: false,
+								showConfirmButton: false,
 								onClose: () => {
 									this.$router.push({path: "/dashboard/videos"})
 								}
 							})
-						}
-					})
-					.catch( error => {
-						this.loading = false
-						if( error.response.status == 403 )
-							this.error = this.$t("invalid-login")
-						else if( error.response.status == 405 )
+						} else if (this.login.username === "new@example.com") {
+							// New location detection scenario
+							this.message = this.$t("new-location") + this.login.username + ' ' + this.$t("new-location-2")
+							this.code = true
+						} else if (this.code && this.login.code === "123456") {
+							// Successful verification code
+							const mockUser = {
+								email: this.login.username,
+								name: "New Location User",
+								token: "mock-token-" + Math.random().toString(36).substring(2),
+								plan: {storageLimit: 20000000}
+							}
+							
+							this.$store.commit("setUser", mockUser)
+							localStorage.setItem("token", mockUser.token)
+							localStorage.setItem("user", JSON.stringify(mockUser))
+							
+							// Add mock files data
+							const mockFiles = [
+								// Video files
+								{
+									_id: "v1",
+									imageUsr: "https://randomuser.me/api/portraits/men/1.jpg",
+									nameUser: "John Doe",
+									title: "Introduction Video",
+									description: "Company introduction for new employees",
+									size: 15000000,
+									createdAt: new Date().getTime() - 86400000 * 2,
+									url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+									type: "video"
+								},
+								{
+									_id: "v2",
+									imageUsr: "https://randomuser.me/api/portraits/women/2.jpg",
+									nameUser: "Jane Smith",
+									title: "Product Demo",
+									description: "Showcase of new features",
+									size: 25000000,
+									createdAt: new Date().getTime() - 86400000 * 5,
+									url: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+									type: "video"
+								},
+								
+								// Audio files
+								{
+									_id: "a1",
+									imageUsr: "https://randomuser.me/api/portraits/men/3.jpg",
+									nameUser: "Robert Johnson",
+									title: "Meeting Recording",
+									description: "Team weekly planning session",
+									size: 5000000,
+									createdAt: new Date().getTime() - 86400000 * 1,
+									url: "https://sample-videos.com/audio/mp3/wave.mp3",
+									type: "audio"
+								},
+								{
+									_id: "a2",
+									imageUsr: "https://randomuser.me/api/portraits/women/4.jpg",
+									nameUser: "Emily Davis",
+									title: "Conference Call",
+									description: "Client discussion about project timeline",
+									size: 7500000,
+									createdAt: new Date().getTime() - 86400000 * 3,
+									url: "https://sample-videos.com/audio/mp3/wave.mp3",
+									type: "audio"
+								},
+								
+								// Document files
+								{
+									_id: "d1",
+									imageUsr: "https://randomuser.me/api/portraits/men/5.jpg",
+									nameUser: "Michael Wilson",
+									title: "Quarterly Report",
+									description: "Financial analysis Q3 2023",
+									size: 3000000,
+									createdAt: new Date().getTime() - 86400000 * 7,
+									url: "https://sample-files.com/download/pdf/sample.pdf",
+									type: "other",
+									isPdf: true
+								},
+								{
+									_id: "d2",
+									imageUsr: "https://randomuser.me/api/portraits/women/6.jpg",
+									nameUser: "Sarah Brown",
+									title: "Project Proposal",
+									description: "New marketing initiative details",
+									size: 2500000,
+									createdAt: new Date().getTime() - 86400000 * 10,
+									url: "https://sample-files.com/download/doc/sample.doc",
+									type: "other",
+									isWord: true
+								},
+								{
+									_id: "d3",
+									imageUsr: "https://randomuser.me/api/portraits/men/7.jpg",
+									nameUser: "David Lee",
+									title: "Product Image",
+									description: "High resolution product photo",
+									size: 8500000,
+									createdAt: new Date().getTime() - 86400000 * 15,
+									url: "https://sample-files.com/download/image/sample.jpg",
+									type: "other",
+									isImage: true
+								}
+							]
+							
+							// Commit the mock files to the store
+							this.$store.commit("setFiles", mockFiles)
+							
+							this.$swal({
+								title: this.$t("access-confirmed"),
+								text: this.$t("login-redirection"),
+								type: "success",
+								timer: 4000,
+								showConfirmButton: false,
+								onClose: () => {
+									this.$router.push({path: "/dashboard/videos"})
+								}
+							})
+						} else if (this.code && this.login.code !== "123456") {
+							// Invalid verification code
 							this.error = this.$t("invalid-code")
-						else
-							this.$swal(this.$t("unknown-error"), JSON.stringify( error ), "warning")
-					})
+						} else {
+							// Invalid login
+							this.error = this.$t("invalid-login")
+						}
+					}, 1000)
 				}
 			}
 		},

@@ -10,7 +10,8 @@
     "build-prod": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --config webpack.config.dev.js --mode development --open --history-api-fallback",
     "prod": "webpack-dev-server --config webpack.config.prod.js --mode development --open --history-api-fallback",
-    "dev-https": "webpack-dev-server --config webpack.config.dev.js --mode development --open --history-api-fallback --https --cert certs/private.pem --key certs/private.key"
+    "dev-https": "webpack-dev-server --config webpack.config.dev.js --mode development --open --history-api-fallback --https --cert certs/private.pem --key certs/private.key",
+    "fix-assets": "sed -i '' 's|\"/assets/|\"assets/|g; s|'\\''/assets/|'\\''assets/|g; s|url(\"/assets/|url(\"assets/|g' ./public/main.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "v-viewer": "^1.5.1",
     "videojs-record": "^3.11.0",
     "videojs-wavesurfer": "^2.11.0",
+    "videojs-youtube": "^3.0.1",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.4",
     "vue-i18n": "^8.15.3",
