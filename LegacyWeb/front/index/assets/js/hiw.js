@@ -17,34 +17,34 @@ $(document).ready(function(){
 
     /*	Custom Links 	*/
     $("#adminLink").click(function() {
-    	let url = "https://account.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#userLink").click(function() {
-    	let url = "https://user.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#legacyLink").click(function() {
-    	let url = "https://legacy.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#registerLink").click(function() {
-    	let url = "https://account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'suscribe', {	'event_category': 'register'})
     	location.href = url
     })
     $("#registerLink2").click(function() {
-    	let url = "https://account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'suscribe', {	'event_category': 'register'})
     	location.href = url
     })
 	$("#trial").click(function() {
-    	let url = "https://account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'free-trial', {	'event_category': 'register'})
 		location.href = url;    	
     })
 	$("#trial-free").click(function() {
-    	let url = "https://account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'free-trial', {	'event_category': 'register'})
 		location.href = url;    	
     })
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			"spec-3-title": "YOUR PRIVACY IS OUR BIGGEST CONCERN",
 			"spec-3-text": "The second you upload a video, you can be absolutely sure we use the best security tools to ensure your information is protected.",
 			"spec-4-title": "GOELU’S LAB",
-			"spec-4-text": "In Our lab you will be able to upload any video and insert an audio explaining what is going on in it. If you have any old video you want to explain to your family, this is the best tool for it!",
+			"spec-4-text": "In Our lab you will be able to upload any video and insert an audio explaining what is going on in it.",
 			"spec-5-title": "MESSAGES FOR THE GENERATIONS TO COME",
 			"spec-5-text": "There is no need anymore for the phrase “What your grandfather used to say”. Share your wisdom directly with the next generation.",
 			"spec-6-title": "FAMILY RECIPES",
@@ -113,7 +113,7 @@ $(document).ready(function(){
 			"hiw-4-title": "GOELU’S CALENDAR",
 			"hiw-4-text": "With goelU’s Calendar create content to be triggered at the exact date and time. Schedule content for birthdays, anniversaries, or holidays.",
 			"hiw-5-title": "GOELU’S LAB",
-			"hiw-5-text": "In our LAB you will be able to upload any video and insert an audio explaining what is going on in it. If you have any old video you want to explain to your family, this is the best tool for it!",
+			"hiw-5-text": "In our LAB you will be able to upload any video and insert an audio explaining what is going on in it.",
 			"hiw-6-title": "CHOOSE YOUR RECIPIENTS",
 			"hiw-6-text": "Upload or create content for specific people. Make sure your messages will be delivered to the person you created the content for.",
 			"hiw-7-title": "RECIPIENTS WILL BE NOTIFIED VIA E-MAIL",

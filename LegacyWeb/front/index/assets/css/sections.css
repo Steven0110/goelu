@@ -3,12 +3,12 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	height: 100vh;
-	background: url('/assets/images/BG_white.jpg');
+	background: url('../../assets/images/BG_white.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .main-section-free{
-	background: url('/assets/images/goelu_screen_fondo.jpg') !important;	
+	background: url('../../assets/images/goelu_screen_fondo.jpg') !important;	
 }
 .main-section .main-section-container{
 	position: relative;
@@ -84,7 +84,7 @@
 
 .for-life{	
 	height: 100vh;
-	background-image: url('/assets/images/goelu_fndo_plan_slider_plans.jpg');
+	background-image: url('../../assets/images/goelu_fndo_plan_slider_plans.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -189,7 +189,7 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	height: 100vh;
-	background: url('/assets/images/goelu_index_slider_partnerhip-02.jpg');
+	background: url('../../assets/images/goelu_index_slider_partnerhip-02.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	
@@ -774,7 +774,7 @@
 }
 
 .calendar {
-	background: url("../images/bg2.jpg");
+	background: url("../../images/bg2.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -968,7 +968,7 @@
 	color: #3aa9e0;
 }
 .video .memories-background{
-	background: url("../images/memories.jpg");
+	background: url("../../images/memories.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1136,7 +1136,7 @@
 }
 .videotutorial-container .video-inner-container{
 	padding: 50px;
-	background: url('/assets/images/BG_videos.jpg');
+	background: url('../../assets/images/BG_videos.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -1170,13 +1170,13 @@
 	transition: 0.2s linear all;
 }
 .videotutorial-container .video-inner-container .video-image-poster.poster-1{
-	background-image: url('/assets/images/portada_videos_02.jpg');
+	background-image: url('../../assets/images/portada_videos_02.jpg');
 }
 .videotutorial-container .video-inner-container .video-image-poster.poster-2{
-	background-image: url('/assets/images/portada_videos_03.jpg');
+	background-image: url('../../assets/images/portada_videos_03.jpg');
 }
 .videotutorial-container .video-inner-container .video-image-poster.poster-3{
-	background-image: url('/assets/images/portada_videos_05.jpg');
+	background-image: url('../../assets/images/portada_videos_05.jpg');
 }
 .videotutorial-container .video-inner-container .video-image-poster:hover{
 	cursor: pointer;
@@ -2196,7 +2196,7 @@
 }
 
 .suscribe{
-	background: url("../images/fndo_index_newsletter_01.jpg");
+	background: url("../../images/fndo_index_newsletter_01.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

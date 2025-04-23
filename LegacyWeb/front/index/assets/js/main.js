@@ -38,78 +38,67 @@ $(document).ready(function(){
 	
     /*	Custom Links 	*/
 	$("#plansLink").click(function() {
-    	let url = "https://dev-account.goelu.com/plans?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#adminLink").click(function() {
     	
-		let url = "https://account.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-account.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+		let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#userLink").click(function() {
-    	let url = "https://user.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-user.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#legacyLink").click(function() {
-    	let url = "https://legacy.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-legacy.goelu.com?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
     $("#registerLink").click(function() {
-    	let url = "https://account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'suscribe', {	'event_category': 'register'})
     	location.href = url
     })
 
     $("#registerLink2").click(function() {
-    	//let url = "https://dev-account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
-		let url = "https://account.goelu.com/register?lang=" + (localStorage.getItem("locale") || "en")
+		let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'suscribe', {	'event_category': 'register'})
     	location.href = url
     })
 
 	$("#trial").click(function() {
-    	let url = "https://account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'free-trial', {	'event_category': 'register'})			
 		location.href = url;    	
     })
 	$("#trial2").click(function() {
-    	let url = "https://account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		gtag('event', 'free-trial', {	'event_category': 'register'})
 		location.href = url;    	
     })
 	$("#trial-free").click(function() {
 		gtag('event', 'free-trial', {	'event_category': 'register'})
-    	//let url = "https://dev-account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")		
-		let url = "https://account.goelu.com/free-trial?lang=" + (localStorage.getItem("locale") || "en")		
+		let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
 		location.href = url;    	
     })
 	$("#plans").click(function() {
-    	let url = "https://dev-account.goelu.com/plans?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
 	$("#parthership").click(function() {
-    	let url = "https://account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
-		//let url = "https://dev-account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
 	$("#plans-m").click(function() {
-    	let url = "https://dev-account.goelu.com/plans?lang=" + (localStorage.getItem("locale") || "en")
+    	let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
 	$("#parthership-m").click(function() {
-    	//let url = "https://dev-account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
-		let url = "https://account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
+		let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
 	$("#parthership-slider").click(function() {
-    	//let url = "https://dev-account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
-		let url = "https://account.goelu.com/partnership?lang=" + (localStorage.getItem("locale") || "en")
+		let url = "https://steven0110.github.io/goelu/LegacyWeb/front/publicapp/public/"
     	location.href = url
     })
 	/*	Mobile Menu Toggle */
@@ -198,7 +187,7 @@ $(document).ready(function(){
 			"spec-3-title": "YOUR PRIVACY IS OUR BIGGEST CONCERN",
 			"spec-3-text": "The second you upload a video, you can be absolutely sure we use the best security tools to ensure your information is protected.",
 			"spec-4-title": "GOELU’S LAB",
-			"spec-4-text": "In Our lab you will be able to upload any video and insert an audio explaining what is going on in it. If you have any old video you want to explain to your family, this is the best tool for it!",
+			"spec-4-text": "In Our lab you will be able to upload any video and insert an audio explaining what is going on in it. ",
 			"spec-5-title": "MESSAGES FOR THE GENERATIONS TO COME",
 			"spec-5-text": "There is no need anymore for the phrase “What your grandfather used to say”. Share your wisdom directly with the next generation.",
 			"spec-6-title": "LEGACY MANAGER",
